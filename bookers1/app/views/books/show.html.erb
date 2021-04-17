@@ -1,0 +1,29 @@
+<html><head>
+
+    <link rel="stylesheet" media="all" href="/assets/application-d12397cbc3a266ce5a99f7b588223090c55ca04a439953bb5f9304395de93fc3.css" data-turbolinks-track="reload">
+    <script src="/assets/application-4e370d3723b6f204426a9414077d365ea07814cce5619ae24fb7e581988f19ed.js" data-turbolinks-track="reload"></script>
+  <title>WebCampBackendNew</title><meta name="csrf-param" content="authenticity_token"><meta name="csrf-token" content="BzY7XLrWKTCntTcdZzSCWS9xPkAqeoQrmaNljHdXB1XdeW2STOMEu754boQfsfOBj2f1YiCMvRDgavOUh2EayQ=="></head>
+
+  <body>
+
+      <% if flash[:notice] %>
+     <p id="notice">
+       <%= flash[:notice] %>
+     </p>
+   <% end %>
+
+  <h4>Title</h4>
+  <p><%= @book.title %></p>
+
+  <h4>Body</h4>
+  <p><%= @book.body %></p>
+
+  <table>
+  <thead>
+<tr><%= link_to "Edit", edit_book_path %></tr>
+<tr> | </tr>
+<a class="back" href="/books">Back</a>
+</thead>
+<table>
+
+</body></html>

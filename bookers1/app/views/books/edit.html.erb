@@ -8,6 +8,13 @@
   <title>WebCampBackendNew</title><meta name="csrf-param" content="authenticity_token"><meta name="csrf-token" content="/Y1nMg7freKQuufCIrs2iwtxRLZOvJghQBHg4RvSUL8nwjH8+OqAaYl3vltaPkdTq2ePlERKoRo52Hb56+RNIw=="></head>
 
   <body>
+
+   <% if flash[:notice] %>
+     <p id="notice">
+       <%= flash[:notice] %>
+     </p>
+   <% end %>
+
   <h1>Editing Book</h1>
   <%= form_with model:@book, local:true do |f| %>
   <h4>Title</h4>

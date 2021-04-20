@@ -7,7 +7,7 @@
    <% end %>
 
     <% if @book.errors.any? %>
-   <%= @book.errors.count %>件のerror
+   <%= @book.errors.count %>error
    <% @book.errors.full_messages.each do |message| %>
    <%= message %>
    <% end %>
